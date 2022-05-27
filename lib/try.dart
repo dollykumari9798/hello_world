@@ -62,11 +62,11 @@ class Home extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  // FaIcon(FontAwesomeIcons.mailchimp),
-                  Icon(
-                    Icons.mail_outline,
-                    size: 30,
-                  ),
+                  FaIcon(FontAwesomeIcons.mailchimp),
+                  // Icon(
+                  //   Icons.mail_outline,
+                  //   size: 30,
+                  // ),
                   Text('  rppandey9798@gmail.com')
                 ],
               ),
