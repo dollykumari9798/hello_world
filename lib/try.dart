@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:gradient ';
 
 void main() {
   runApp(MaterialApp(
@@ -16,14 +17,21 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'D- Portfolio ',
+          'D ~ Portfolio',
           style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 30,
               fontFamily: 'Smooch'),
         ),
-        backgroundColor: Colors.pink[900],
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: <Color>[Colors.pink, Colors.white]),
+          ),
+        ),
       ),
       body: Column(
         children: <Widget>[
@@ -40,8 +48,10 @@ class Home extends StatelessWidget {
             height: 20,
           ),
           CircleAvatar(
-              radius: 100,
-              backgroundImage: AssetImage('assets/image/my_pic.jpg')),
+            radius: 100,
+            backgroundImage: AssetImage('assets/image/my_pic.jpg'),
+            // fit: BoxFit.fitHeight,
+          ),
           SizedBox(
             height: 10,
           ),
@@ -62,11 +72,11 @@ class Home extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  FaIcon(FontAwesomeIcons.mailchimp),
-                  // Icon(
-                  //   Icons.mail_outline,
-                  //   size: 30,
-                  // ),
+                  // FaIcon(FontAwesomeIcons.mailchimp),
+                  Icon(
+                    Icons.mail_outline,
+                    size: 30,
+                  ),
                   Text('  rppandey9798@gmail.com')
                 ],
               ),
