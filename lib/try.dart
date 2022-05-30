@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:hello_world/educationDetails.dart';
 // import 'package:gradient ';
 
 void main() {
@@ -175,7 +176,11 @@ class Home extends StatelessWidget {
                 height: 20,
               ),
               MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return educationDetails();
+                  }));
+                },
                 child: Text(
                   'Know More About Me',
                   style: TextStyle(fontSize: 20, color: Colors.white),
