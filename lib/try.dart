@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 // import 'package:gradient ';
 
 void main() {
@@ -38,25 +39,49 @@ class Home extends StatelessWidget {
           constraints: BoxConstraints.expand(),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/image/bg.png'), fit: BoxFit.cover)),
+                  image: AssetImage('assets/image/bg.png'),
+                  fit: BoxFit.fitWidth)),
           child: Column(
             children: <Widget>[
+              SizedBox(
+                height: 15,
+              ),
               Padding(
-                  padding: const EdgeInsets.only(top: 80.0),
-                  child: Text(
-                    'Flutter Developer',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold),
-                  )),
+                padding: const EdgeInsets.only(top: 50.0),
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    TypewriterAnimatedText('Flutter Developer',
+                        textStyle: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        )),
+                    TypewriterAnimatedText('Frontend-web Developer',
+                        textStyle: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold)),
+                    TypewriterAnimatedText(' JAVA-programmer',
+                        textStyle: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold)),
+                    TypewriterAnimatedText('Graphic Designer',
+                        textStyle: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+
+                // child: Text(
+                //   'Flutter Developer',
+                //   style: TextStyle(
+                //       color: Colors.black,
+                //       fontSize: 30,
+                //       fontWeight: FontWeight.bold),
+                // )
+              ),
               SizedBox(
                 height: 20,
               ),
               CircleAvatar(
                 radius: 100,
-                backgroundImage: AssetImage('assets/image/my_pic.jpg'),
-                // fit: BoxFit.fitHeight,
+                backgroundImage: AssetImage('assets/image/last.jpeg'),
+                // fit: BoxFit.fill,
               ),
               SizedBox(
                 height: 10,
@@ -71,16 +96,17 @@ class Home extends StatelessWidget {
                     fontFamily: 'Smooch'),
               ),
               SizedBox(
-                height: 10,
+                height: 35,
               ),
               Column(
                 children: <Widget>[
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    // mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       // FaIcon(FontAwesomeIcons.mailchimp),
                       Icon(
                         Icons.mail_outline,
+                        color: Colors.pink[900],
                         size: 30,
                       ),
                       Text('  rppandey9798@gmail.com',
@@ -93,10 +119,11 @@ class Home extends StatelessWidget {
                     ],
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    // mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.contact_phone,
+                        Icons.call,
+                        color: Colors.pink[900],
                         size: 30,
                       ),
                       Text('  911***2147',
@@ -109,10 +136,11 @@ class Home extends StatelessWidget {
                     ],
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    // mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
                         Icons.supervised_user_circle,
+                        color: Colors.pink[900],
                         size: 30,
                       ),
                       Text('  Developer',
@@ -125,10 +153,11 @@ class Home extends StatelessWidget {
                     ],
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    // mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
                         Icons.home,
+                        color: Colors.pink[900],
                         size: 30,
                       ),
                       Text('  Full-Time',
