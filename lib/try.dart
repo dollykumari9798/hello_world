@@ -170,6 +170,17 @@ class Home extends StatelessWidget {
                     ],
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              MaterialButton(
+                onPressed: () {},
+                child: Text(
+                  'Know More About Me',
+                  style: TextStyle(fontSize: 20, color: Colors.white),
+                ),
+                color: Colors.pink[900],
               )
             ],
           ),
