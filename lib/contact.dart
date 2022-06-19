@@ -9,17 +9,17 @@ import 'dart:convert';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: educationDetails(),
+    home: contact(),
   ));
 }
 
-class educationDetails extends StatefulWidget {
-  const educationDetails({Key? key}) : super(key: key);
+class contact extends StatefulWidget {
+  const contact({Key? key}) : super(key: key);
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<educationDetails> {
+class _MyHomePageState extends State<contact> {
   final _formKey = GlobalKey<FormState>();
   final nameController = TextEditingController();
   final emailController = TextEditingController();
@@ -29,7 +29,7 @@ class _MyHomePageState extends State<educationDetails> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 242, 235, 233),
       body: ListView(children: [
         Container(
           height: 200,
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<educationDetails> {
                     height: 80,
                     width: 300,
                     decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 242, 235, 233),
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(50),
                           bottomRight: Radius.circular(50),
@@ -101,7 +101,7 @@ class _MyHomePageState extends State<educationDetails> {
                         offset: const Offset(0, 5),
                         blurRadius: 10,
                         spreadRadius: 1,
-                        color: Color.fromARGB(255, 159, 77, 141)!)
+                        color: Color.fromARGB(255, 165, 190, 204))
                   ]),
               child: Form(
                 key: _formKey,
@@ -163,7 +163,7 @@ class _MyHomePageState extends State<educationDetails> {
                               response == 200
                                   ? const SnackBar(
                                       content: Text('Message Sent!'),
-                                      backgroundColor: Colors.green)
+                                      backgroundColor: Colors.teal)
                                   : const SnackBar(
                                       content: Text('Failed to send message!'),
                                       backgroundColor: Colors.red),

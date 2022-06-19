@@ -95,7 +95,7 @@ class Home extends StatelessWidget {
                     fontSize: 25,
                     shadows: [
                       Shadow(
-                        color: Colors.pink,
+                        color: Color.fromARGB(255, 165, 190, 204),
                         blurRadius: 10,
                       )
                     ],
@@ -103,7 +103,7 @@ class Home extends StatelessWidget {
                     fontFamily: 'Smooch'),
               ),
               SizedBox(
-                height: 15,
+                height: 30,
               ),
               Padding(
                 padding: EdgeInsets.fromLTRB(55.0, 0.0, 0.0, 0.0),
@@ -113,69 +113,96 @@ class Home extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         // FaIcon(FontAwesomeIcons.mailchimp),
-                        Icon(
-                          Icons.mail_outline,
-                          color: Color.fromARGB(255, 136, 14, 79),
-                          size: 30,
-                        ),
-                        Text('  rppandey9798@gmail.com',
+                        // Icon(
+                        //   Icons.mail_outline,
+                        //   color: Color.fromARGB(255, 136, 14, 79),
+                        //   size: 30,
+                        // ),
+                        Text('  Developer by Passion',
                             style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 15,
+                              fontSize: 30,
+                              fontFamily: 'Cookie',
                               letterSpacing: 2,
+                              // shadows: [
+                              //   Shadow(
+                              //     color: Colors.blueAccent,
+                              //     blurRadius: 10,
+                              //   )
+                              // ],
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                      ],
+                    ),
+                    Row(
+                      // mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        // Icon(
+                        //   Icons.call,
+                        //   color: Colors.pink[900],
+                        //   size: 30,
+                        // ),
+                        Text('  Explorer by Soul',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
+                              fontFamily: 'Cookie',
+                              letterSpacing: 2,
+                              // shadows: [
+                              //   Shadow(
+                              //     color: Color.fromARGB(255, 225, 235, 253),
+                              //     blurRadius: 10,
+                              //   )
+                              // ],
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                      ],
+                    ),
+                    Row(
+                      // mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        // Icon(
+                        //   Icons.supervised_user_circle,
+                        //   color: Colors.pink[900],
+                        //   size: 30,
+                        // ),
+                        Text('  Dreamer by Heart',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
+                              fontFamily: 'Cookie',
+                              letterSpacing: 2,
+                              // shadows: [
+                              //   Shadow(
+                              //     color: Colors.blue,
+                              //     blurRadius: 10,
+                              //   )
+                              // ],
                             ))
                       ],
                     ),
                     Row(
                       // mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(
-                          Icons.call,
-                          color: Colors.pink[900],
-                          size: 30,
-                        ),
-                        Text('  911***2147',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              letterSpacing: 2,
-                            ))
-                      ],
-                    ),
-                    Row(
-                      // mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Icon(
-                          Icons.supervised_user_circle,
-                          color: Colors.pink[900],
-                          size: 30,
-                        ),
-                        Text('  Developer',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              letterSpacing: 2,
-                            ))
-                      ],
-                    ),
-                    Row(
-                      // mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Icon(
-                          Icons.home,
-                          color: Colors.pink[900],
-                          size: 30,
-                        ),
-                        Text('  Full-Time',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              letterSpacing: 2,
-                            ))
+                        // Icon(
+                        //   Icons.home,
+                        //   color: Colors.pink[900],
+                        //   size: 30,
+                        // ),
+                        // Text('  Full-Time',
+                        //     style: TextStyle(
+                        //       color: Colors.black,
+                        //       fontWeight: FontWeight.bold,
+                        //       fontSize: 15,
+                        //       letterSpacing: 2,
+                        //     ))
                       ],
                     ),
                   ],
@@ -183,7 +210,7 @@ class Home extends StatelessWidget {
               ),
 
               SizedBox(
-                height: 20,
+                height: 60,
               ),
               MaterialButton(
                 onPressed: () {
@@ -205,22 +232,22 @@ class Home extends StatelessWidget {
                     height: 80,
                     width: 180,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(40, 136, 14, 79),
+                        color: Color.fromARGB(255, 242, 235, 233),
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 74,
                             color: Color.fromARGB(90, 136, 14, 79),
                             offset: Offset(
-                              37,
-                              37,
+                              15,
+                              30,
                             ),
                           ),
                           BoxShadow(
                             blurRadius: 74,
-                            color: Color(0xffffffff),
+                            color: Colors.white,
                             offset: Offset(
-                              -37,
-                              -37,
+                              -30,
+                              0,
                             ),
                           ),
                         ],

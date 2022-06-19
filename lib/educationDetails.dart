@@ -50,15 +50,6 @@ class _MyHomePageState extends State<educationDetails> {
                     top: 100,
                     left: 20,
                     child: Center(
-                        // child: MaterialButton(
-                        //   child: Text(
-                        //     '⬅️',
-                        //     style: TextStyle(color: Colors.white),
-                        //   ),
-                        //   onPressed: () {
-                        //     Navigator.pop(context);
-                        //   },
-                        // ),
                         child: Text("About Me",
                             textAlign: TextAlign.end,
                             style: TextStyle(
@@ -131,13 +122,7 @@ class _MyHomePageState extends State<educationDetails> {
                                       color: Color.fromARGB(255, 79, 27, 48),
                                       fontWeight: FontWeight.bold),
                                 ),
-                                // Text(
-                                //   "Hello world",
-                                //   style: TextStyle(
-                                //       fontSize: 16,
-                                //       color: Colors.grey,
-                                //       fontWeight: FontWeight.bold),
-                                // ),
+
                                 Divider(color: Colors.black),
                                 Text(
                                   "I am a Sophomore at Dr BC Roy engineering college pursuing B.Tech. in INFORMATION TECHNOLOGY Engineering. ",
@@ -164,49 +149,6 @@ class _MyHomePageState extends State<educationDetails> {
                         ))
                   ],
                 )),
-            // Expanded(
-            //     child: ListView(
-            //   children: [
-            //     Container(
-            //       margin: const EdgeInsets.only(bottom: 18, top: 25),
-            //       height: 188,
-            //       padding: EdgeInsets.only(left: 28, right: 28, bottom: 20),
-            //       child: Container(
-            //         decoration: BoxDecoration(
-            //           color: Color(0xFf363f93),
-            //           borderRadius: BorderRadius.only(
-            //             bottomLeft: Radius.circular(88.0),
-            //           ),
-            //           // boxShadow: [
-            //           //   BoxShadow(
-            //           //       color: Color(0xFF363F93).withOpacity(8.3),
-            //           //       offset: Offset(-18.8, 8.8),
-            //           //       blurRadius: 20,
-            //           //       spreadRadius: 40),
-            //           // ],
-            //         ),
-            //         padding: const EdgeInsets.only(
-            //           left: 32,
-            //           top: 58.8,
-            //           bottom: 58,
-            //         ),
-            //         child: Column(
-            //             crossAxisAlignment: CrossAxisAlignment.start,
-            //             children: <Widget>[
-            //               Text(
-            //                 "THE BEST",
-            //                 style: TextStyle(color: Colors.white, fontSize: 12),
-            //               ), // Text
-            //               const SizedBox(
-            //                 height: 2,
-            //               ),
-            //               Text(
-            //                 "Your life starts here",
-            //                 style: TextStyle(
-            //                     color: Colors.white,
-            //                     fontSize: 22,
-            //                     fontWeight: FontWeight.bold),
-
             MaterialButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -261,13 +203,6 @@ class _MyHomePageState extends State<educationDetails> {
 
               // color: Colors.pink[900],
             )
-
-            //               ),
-            //             ]),
-            //       ),
-            //     ),
-            //   ],
-            // ))
           ],
         ));
   }
